@@ -1,5 +1,4 @@
-from __future__ import division
-from numpy import *
+from numpy import concatenate, dot, repeat, argmax, take, argmin
 
 # concatenate: Join a sequence of arrays along an existing axis.
 link = lambda a,b: concatenate((a,b[1:]))

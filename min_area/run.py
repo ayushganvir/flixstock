@@ -1,5 +1,5 @@
 import math
-from numpy import *
+from numpy import random
 from min_rect import min_bounding_rect
 
 from shape import shape
