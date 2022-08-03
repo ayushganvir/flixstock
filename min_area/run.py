@@ -15,17 +15,13 @@ if __name__ == "__main__":
     # A rectangle
     #xy_points = array([ [0,0], [1,0], [1,2], [0,2], [0,0] ])
 
-    hull_points = shape(xy_points)
-    hull_points = hull_points[::-1]
-    print ('Convex hull points: \n', hull_points, "\n")
+    _points = shape(xy_points)
+    _points = _points[::-1]
 
     # Find minimum area bounding rectangle
-    (rot_angle, area, width, height, center_point, corner_points) = min_bounding_rect(hull_points)
+    (rot_angle, area, width, height, center_point, corner_points) = min_bounding_rect(_points)
 
     print("Minimum area bounding box:")
-    print("Rotation angle:", rot_angle, "rad  (", rot_angle*(180/math.pi), "deg )")
-    print("Width:", width, " Height:", height, "  Area:", area)
-    print("Center point: \n", center_point )
-    print("Corner points: \n", corner_points, "\n")
-
+    print("Width:", width, " Height:", height,)
+ 
 

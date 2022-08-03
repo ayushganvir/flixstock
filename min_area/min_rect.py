@@ -69,4 +69,4 @@ def min_bounding_rect(points):
 
 
     return (angle, min_bbox[1], min_bbox[2], min_bbox[3], center_point, corner_points) # rot_angle, area, width, height, center_point, corner_points
-
+    
